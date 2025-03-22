@@ -1,0 +1,37 @@
+name: Daily Fake Commits
+
+on:
+  schedule:
+    - cron: "0 2 * * *"  # Runs at 2 AM UTC every day
+
+jobs:
+  generate_commits:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "Pooyan Razian"
+          git config --global user.email "prazian@gmail.com"
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate commits
+        run: |
+          YESTERDAY=$(date -d "yesterday" +"%Y-%m-%d")
+          python src/generate_commits_daily.py $YESTERDAY
+
+      - name: Push changes
+        run: |
+          git pull --rebase
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
