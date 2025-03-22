@@ -28,7 +28,7 @@ def generate_commits(start_date, end_date):
             commit_time = datetime(current_date.year, current_date.month, current_date.day, commit_hour, commit_minute, commit_second)
             commit_time_str = commit_time.strftime("%Y-%m-%d %H:%M:%S")
             
-            with open("fake_file.txt", "a") as f:
+            with open("assets/fake_file.txt", "a") as f:
                 f.write(f"Commit on {commit_time_str}\n")
             run_git_command("git add fake_file.txt")
             run_git_command(f'GIT_COMMITTER_DATE="{commit_time_str}" git commit -m "Fake commit on {commit_time_str}" --date="{commit_time_str}"')
@@ -36,12 +36,12 @@ def generate_commits(start_date, end_date):
         current_date += timedelta(days=1)
 
 if __name__ == "__main__":
-    start_date = datetime(2013, 1, 1)
-    end_date = datetime(2025, 3, 21)
+    arg_start_date = datetime(2013, 1, 1)
+    arg_end_date = datetime(2025, 3, 21)
     
     # Initialize git repo if not already initialized
     if not os.path.exists(".git"):
         run_git_command("git init")
     
-    generate_commits(start_date, end_date)
+    generate_commits(arg_start_date, arg_end_date)
 
