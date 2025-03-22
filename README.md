@@ -1,4 +1,5 @@
 # About
+**Spoiler alert:** This project is just a simple "demo" to challenge an idea:   
 
 Want to become a 10x developer like this? 🤑🤑🤑  
 
