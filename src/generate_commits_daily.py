@@ -9,8 +9,21 @@ def run_git_command(command):
 
 def generate_commits_for_date(commit_date):
     max_commits = 40
+    num_commits = random.randint(1, max_commits)  # At least 1 commit per day
 
-    num_commits = random.randint(10, max_commits)  # At least 10 commits per day
+    messages = [
+        "Scrum meetings are a waste of time"
+        "Scrum is a scam",
+        "Scrum Master or Scrum slave, that is the question",
+        "Scrum kills productivity",
+        "Scrum kills trust",
+        "Scrum = lack of trust",
+        "Scrum kills team spirit",
+        "We don't need no thought control"
+        "Developers are not your kids",
+        "Trust your experts",
+        "Scrum is a mask to hide micromanagement",
+    ]
 
     for _ in range(num_commits):
         commit_hour = random.randint(0, 23)
@@ -23,9 +36,10 @@ def generate_commits_for_date(commit_date):
 
         with open(fake_file, "a") as f:
             f.write(f"Commit on {commit_time_str}\n")
-        run_git_command(f"git add {fake_file}")
-        run_git_command(f'GIT_COMMITTER_DATE="{commit_time_str}" git commit -m "Scrum is for idiots {commit_time_str}" --date="{commit_time_str}"')
 
+        run_git_command(f"git add {fake_file}")
+        commit_message = random.choice(messages)
+        run_git_command(f'GIT_COMMITTER_DATE="{commit_time_str}" git commit -m "{commit_message}" --date="{commit_time_str}"')
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -33,5 +47,4 @@ if __name__ == "__main__":
         sys.exit(1)
 
     age_date = datetime.strptime(sys.argv[1], "%Y-%m-%d")
-
     generate_commits_for_date(age_date)
