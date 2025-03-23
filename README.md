@@ -6,12 +6,14 @@ Want to become a 10x developer like this? 🤑🤑🤑
 ![Companies who blindly hire 10x developers](_docs/img/rhys-tweet-hiring-10x-devs-for-500k.png)
 
 ## Code Ninja 10x Developers:
-- Don't document their code.
+- Don't document their code. (job security at max!)
 - Don't test, except in production.
 - Don't share their knowledge.
 - Have no life! They code even in weekends and holidays.
 - Don't care about how clean their git history is.
 - Add "lines of code" or long stories in MD files to improve metrics.
+- Always say "yes boss!" to Scrum Masters and Managers.
+- Have superpowers: Memorize all the syntaxes and type fast!
 - Just commit, commit, commit, and pushhhhhh.
 - But they earn $500K/year! - smart, right?
 
@@ -20,7 +22,7 @@ More commits = more money because we count productivity by the number of commits
 How to become a 10x developer?  
 That's a secret! And 10x developers never share their secrets! ;)
 
-## Am I a code Ninja 10x Developer?
+## Am I a code Ninja 10x Developer now?
 ![Companies who blindly hire 10x developers](_docs/img/am-i-a-10x-dev.png)
 
 ## Some articles to read:
@@ -42,3 +44,19 @@ You can read more articles [here](https://www.pooyan.info/articles).
 - [Personal Website](https://pooyan.info)
 - [LinkedIn](https://www.linkedin.com/in/prazian/)
 - [Medium](https://medium.com/@pooyan_razian)
+
+## The secret truth!
+This section is for those who really want to know the truth 👇
+
+[//]: # (Don't be such a 10x developer!)
+[//]: # (Scrum Master or Scrum slave, that is the question!)
+[//]: # (Scrum usually is a mask to hide micromanagement.)
+[//]: # (Scrum usually just means "lack of trust")
+[//]: # (Trust your experts.)
+[//]: # (Developers are not your kids.)
+[//]: # (We don't need no thought control!)
+[//]: # (Scrum meetings are a waste of time.)
+[//]: # (Scrum is a scam.)
+[//]: # (Scrum kills productivity.)
+[//]: # (Scrum kills trust.)
+[//]: # (Scrum kills team spirit.)
