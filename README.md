@@ -9,7 +9,9 @@ Want to become a 10x developer like this? 🤑🤑🤑
 - Don't document their code.
 - Don't test, except in production.
 - Don't share their knowledge.
+- Have no life! They code even in weekends and holidays.
 - Don't care about how clean their git history is.
+- Add "lines of code" or long stories in MD files to improve metrics.
 - Just commit, commit, commit, and pushhhhhh.
 - But they earn $500K/year! - smart, right?
 
