@@ -51,7 +51,7 @@ This section is for those who really want to know the truth 👇
 [//]: # (Don't be such a 10x developer!)
 [//]: # (Scrum Master or Scrum slave, that is the question!)
 [//]: # (Scrum usually is a mask to hide micromanagement.)
-[//]: # (Scrum usually just means "lack of trust")
+[//]: # (Scrum usually just means "lack of trust".)
 [//]: # (Trust your experts.)
 [//]: # (Developers are not your kids.)
 [//]: # (We don't need no thought control!)
