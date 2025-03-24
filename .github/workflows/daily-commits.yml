@@ -1,4 +1,4 @@
-name: Daily Fake Commits
+name: Daily 10x Commits
 
 on:
   schedule:
