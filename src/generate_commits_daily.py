@@ -12,7 +12,7 @@ def generate_commits_for_date(commit_date):
     num_commits = random.randint(1, max_commits)  # At least 1 commit per day
 
     messages = [
-        "Scrum meetings are a waste of time"
+        "Scrum meetings are a waste of time",
         "Scrum is a scam",
         "Scrum Master or Scrum slave, that is the question",
         "Scrum kills productivity",
