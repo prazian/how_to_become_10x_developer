@@ -19,7 +19,7 @@ def generate_commits_for_date(commit_date):
         "Scrum kills trust",
         "Scrum = lack of trust",
         "Scrum kills team spirit",
-        "We don't need no thought control"
+        "We don't need no thought control",
         "Developers are not your kids",
         "Trust your experts",
         "Scrum is a mask to hide micromanagement",
