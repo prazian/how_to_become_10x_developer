@@ -22,6 +22,12 @@ More commits = more money because we count productivity by the number of commits
 How to become a 10x developer?  
 That's a secret! And 10x developers never share their secrets! ;)
 
+## A side 10x note
+
+Someone said **"but 10x0 = 0!"**  
+Remember, 0x10 = 16 = 2xPizzaTeamDeveloper! 🍕🍕  
+If you feel like a 0x developer, no worries! All you need to do is to change the order!
+
 ## Am I a code Ninja 10x Developer now?
 ![Companies who blindly hire 10x developers](_docs/img/am-i-a-10x-dev.png)
 
@@ -51,12 +57,19 @@ This section is for those who really want to know the truth 👇
 [//]: # (Don't be such a 10x developer!)
 [//]: # (Scrum Master or Scrum slave, that is the question!)
 [//]: # (Scrum usually is a mask to hide micromanagement.)
-[//]: # (Scrum usually just means "lack of trust".)
 [//]: # (Trust your experts.)
 [//]: # (Developers are not your kids.)
 [//]: # (We don't need no thought control!)
-[//]: # (Scrum meetings are a waste of time.)
-[//]: # (Scrum is a scam.)
-[//]: # (Scrum kills productivity.)
-[//]: # (Scrum kills trust.)
-[//]: # (Scrum kills team spirit.)
+[//]: # (Most Scrum meetings are a waste of time.)
+[//]: # (Scrum is a scam? ¯\_\(ツ\)_/¯ )
+[//]: # (A bad Scrum kills productivity.)
+[//]: # (A bad Scrum kills trust.)
+[//]: # (A bad Scrum kills team spirit.)
+[//]: # (A bad Scrum can be the result of "lack of trust".)
+[//]: # (Don't count 10xness by the number of commits)
+[//]: # (Don't count 10xness by the lines of code)
+[//]: # (Impact is what values the most)
+[//]: # (Quality cannot be easily measured)
+[//]: # (Quantity can be faked! Don't be scamed.)
+
+👆
