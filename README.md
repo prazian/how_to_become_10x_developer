@@ -26,7 +26,7 @@ That's a secret! And 10x developers never share their secrets! ;)
 
 Someone said **"but 10x0 = 0!"**  
 Remember, 0x10 = 16 = 2xPizzaTeamDeveloper! 🍕🍕  
-If you feel like a 0x developer, no worries! All you need to do is to change the order!
+If you feel like a 10x0=0 developer, no worries! All you need to do is to change the order!
 
 ## Am I a code Ninja 10x Developer now?
 ![Companies who blindly hire 10x developers](_docs/img/am-i-a-10x-dev.png)
