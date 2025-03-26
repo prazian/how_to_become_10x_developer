@@ -71,5 +71,5 @@ if __name__ == "__main__":
         print("Usage: python generate_commits.py YYYY-MM-DD")
         sys.exit(1)
 
-    age_date = datetime.strptime(sys.argv[1], "%Y-%m-%d")
-    generate_commits_for_date(age_date)
+    arg_date = datetime.strptime(sys.argv[1], "%Y-%m-%d")
+    generate_commits_for_date(arg_date)
