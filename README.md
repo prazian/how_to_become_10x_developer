@@ -33,6 +33,7 @@ If you feel like a 10x0=0 developer, no worries! All you need to do is to change
 
 ## Some articles to read:
 - [CI/CD2 & Continues Debment: How to deal with technical debt](https://medium.com/@pooyan_razian/ci-cd2-continues-debment-how-to-deal-with-technical-debt-b81129e95466)
+- [Scrum is a nice term to hide bad management](https://medium.com/@pooyan_razian/scrum-is-a-nice-term-to-hide-bad-management-b7fbe769332c)
 - [To be “Microservice” or not to be? — (2B || !2B) 💡](https://medium.com/@pooyan_razian/to-be-microservice-or-not-to-be-2b-2b-35ea55a27f7d)
 - [Is microservice architecture for me?](https://medium.com/@pooyan_razian/is-microservice-architecture-for-me-d659e62b855f)
 - [Whoever has come up with the term “Scrum master” should have seen developers as “Scrum slaves”! 🛑 ✋](https://medium.com/@pooyan_razian/whoever-coined-the-term-scrum-master-should-have-seen-developers-as-scrum-slaves-4f30c05ec53a)
