@@ -66,10 +66,10 @@ This section is for those who really want to know the truth 👇
 [//]: # (A bad Scrum kills trust.)
 [//]: # (A bad Scrum kills team spirit.)
 [//]: # (A bad Scrum can be the result of "lack of trust".)
-[//]: # (Don't count 10xness by the number of commits)
-[//]: # (Don't count 10xness by the lines of code)
-[//]: # (Impact is what values the most)
-[//]: # (Quality cannot be easily measured)
+[//]: # (Don't count 10xness by the number of commits.)
+[//]: # (Don't count 10xness by the lines of code.)
+[//]: # (Impact is what values the most.)
+[//]: # (Quality cannot be easily measured.)
 [//]: # (Quantity can be faked! Don't be scamed.)
 
 👆
