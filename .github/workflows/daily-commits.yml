@@ -3,9 +3,6 @@ name: Daily 10x Commits
 on:
   schedule:
     - cron: "0 2 * * *"  # Runs at 2 AM UTC every day
-  push:
-    branches:
-      - master
 
 jobs:
   generate_commits:
