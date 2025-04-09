@@ -3,6 +3,9 @@ name: Daily 10x Commits
 on:
   schedule:
     - cron: "0 2 * * *"  # Runs at 2 AM UTC every day
+  push:
+    branches:
+      - master
 
 jobs:
   generate_commits:
@@ -33,5 +36,45 @@ jobs:
         run: |
           git pull --rebase
           git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get latest release tag
+        id: get_latest
+        run: |
+          LATEST_TAG=$(git tag --sort=-v:refname | grep '^v1\.' | head -n 1 || true)
+          echo "Latest tag: $LATEST_TAG"
+          if [ -z "$LATEST_TAG" ]; then
+            TAG="v1.0.0"
+          else
+            TAG="$LATEST_TAG"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Generate next tag
+        id: next_tag
+        run: |
+          OLD_TAG="${{ steps.get_latest.outputs.tag }}"
+          echo "Previous tag: $OLD_TAG"
+          IFS='.' read -r MAJOR MINOR PATCH <<< "${OLD_TAG#v}"
+
+          # Randomly choose to increment MINOR or PATCH
+          if (( RANDOM % 2 )); then
+            ((MINOR++))
+            PATCH=0
+          else
+            ((PATCH++))
+          fi
+
+          NEW_TAG="v${MAJOR}.${MINOR}.${PATCH}"
+          echo "New tag: $NEW_TAG"
+          echo "tag=$NEW_TAG" >> $GITHUB_OUTPUT
+
+      - name: Create a new release
+        run: |
+          gh release create "${{ steps.next_tag.outputs.tag }}" \
+            --title "Release ${{ steps.next_tag.outputs.tag }}" \
+            --notes "Some 10x code Ninja get shit done release" \
+            --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
