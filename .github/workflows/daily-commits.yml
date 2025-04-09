@@ -68,10 +68,10 @@ jobs:
           echo "Parsed version: MAJOR=$MAJOR, MINOR=$MINOR, PATCH=$PATCH"
           # Randomly choose to increment MINOR or PATCH
           if (( RANDOM % 2 )); then
-            ((MINOR++))
+            MINOR=$((MINOR + 1))
             PATCH=0
           else
-            ((PATCH++))
+            PATCH=$((PATCH + 1))
           fi
 
           NEW_TAG="v${MAJOR}.${MINOR}.${PATCH}"
