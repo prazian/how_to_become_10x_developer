@@ -57,10 +57,15 @@ jobs:
           OLD_TAG="${{ steps.get_latest.outputs.tag }}"
           echo "Previous tag: $OLD_TAG"
           TAG_NO_V=${OLD_TAG#v}
+          # Extract parts and default to zero if missing
           MAJOR=$(echo "$TAG_NO_V" | cut -d. -f1)
           MINOR=$(echo "$TAG_NO_V" | cut -d. -f2)
           PATCH=$(echo "$TAG_NO_V" | cut -d. -f3)
-
+          # Safety fallback in case anything is empty
+          MAJOR=${MAJOR:-1}
+          MINOR=${MINOR:-0}
+          PATCH=${PATCH:-0}
+          echo "Parsed version: MAJOR=$MAJOR, MINOR=$MINOR, PATCH=$PATCH"
           # Randomly choose to increment MINOR or PATCH
           if (( RANDOM % 2 )); then
             ((MINOR++))
