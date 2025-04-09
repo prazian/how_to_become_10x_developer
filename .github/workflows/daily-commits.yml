@@ -56,7 +56,10 @@ jobs:
         run: |
           OLD_TAG="${{ steps.get_latest.outputs.tag }}"
           echo "Previous tag: $OLD_TAG"
-          IFS='.' read -r MAJOR MINOR PATCH <<< "${OLD_TAG#v}"
+          TAG_NO_V=${OLD_TAG#v}
+          MAJOR=$(echo "$TAG_NO_V" | cut -d. -f1)
+          MINOR=$(echo "$TAG_NO_V" | cut -d. -f2)
+          PATCH=$(echo "$TAG_NO_V" | cut -d. -f3)
 
           # Randomly choose to increment MINOR or PATCH
           if (( RANDOM % 2 )); then
