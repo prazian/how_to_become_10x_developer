@@ -1,11 +1,11 @@
-name: Daily 10x Commits
+name: Weekly 10x Release
 
 on:
   schedule:
     - cron: "0 8 * * 6"  # Runs at 8 AM UTC every Saturday
 
 jobs:
-  generate_commits:
+  release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
