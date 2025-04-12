@@ -3,6 +3,9 @@ name: Weekly 10x Release
 on:
   schedule:
     - cron: "0 8 * * 6"  # Runs at 8 AM UTC every Saturday
+  push:
+    branches:
+      - master
 
 jobs:
   release:
