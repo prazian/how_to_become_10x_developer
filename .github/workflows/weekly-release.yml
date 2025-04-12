@@ -30,7 +30,7 @@ jobs:
       - name: Get latest release tag
         id: get_latest
         run: |
-          LATEST_TAG=$(git tag --sort=-v:refname | grep '^v1\.' | head -n 1 || true)
+          LATEST_TAG=$(git tag --sort=-v:refname | grep '^v1\.' | head -n 1 | tr -d '\n\r ')
           echo "Latest tag: $LATEST_TAG"
           if [ -z "$LATEST_TAG" ]; then
             TAG="v1.0.0"
