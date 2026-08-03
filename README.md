@@ -32,25 +32,40 @@ If you feel like a 10x0=0 developer, no worries! All you need to do is to change
 ![Companies who blindly hire 10x developers](_docs/img/am-i-a-10x-dev.png)
 
 ## Some articles to read:
-- [CI/CD2 & Continues Debment: How to deal with technical debt](https://medium.com/@pooyan_razian/ci-cd2-continues-debment-how-to-deal-with-technical-debt-b81129e95466)
-- [Scrum is a nice term to hide bad management](https://medium.com/@pooyan_razian/scrum-is-a-nice-term-to-hide-bad-management-b7fbe769332c)
-- [To be “Microservice” or not to be? — (2B || !2B) 💡](https://medium.com/@pooyan_razian/to-be-microservice-or-not-to-be-2b-2b-35ea55a27f7d)
-- [Is microservice architecture for me?](https://medium.com/@pooyan_razian/is-microservice-architecture-for-me-d659e62b855f)
-- [Whoever has come up with the term “Scrum master” should have seen developers as “Scrum slaves”! 🛑 ✋](https://medium.com/@pooyan_razian/whoever-coined-the-term-scrum-master-should-have-seen-developers-as-scrum-slaves-4f30c05ec53a)
-- [Scrum Master vs Scrum Slaves! 🛑](https://medium.com/@pooyan_razian/scrum-master-vs-scrum-slaves-d60900b876c7)
-- [IT job market is dead! Here is why](https://medium.com/@pooyan_razian/it-job-market-is-dead-here-is-why-ddea26536582)
-- [What is “right” and what is “wrong”? — in IT](https://medium.com/@pooyan_razian/what-is-right-and-what-is-wrong-in-it-92497e6fa6ec)
-- [“Burj Khalifa” feature on someone’s summerhouse?](https://medium.com/@pooyan_razian/lets-build-the-burj-khalifa-feature-on-a-summerhouse-6c8efbd90204)
-- [Nothing more permanent than a temporary solution!](https://medium.com/@pooyan_razian/nothing-more-permanent-than-a-temporary-solution-a7b9129f442b)
-- [Should I plan or straightly jump into coding?](https://medium.com/@pooyan_razian/should-i-plan-or-straightly-jump-into-coding-6c3135396e4e)
-- [Consistency: The key to growth!](https://medium.com/@pooyan_razian/consistency-the-key-to-growth-ea1e6af31704)
+- [Make dependency updates boring again](https://dev.to/prazian/make-dependency-updates-boring-again-3cfm)
+- [The license risk hiding in your dependency tree](https://dev.to/prazian/the-license-risk-hiding-in-your-dependency-tree-2d1)
+- [Quiet browsing? Tabby keeps you company](https://dev.to/prazian/quiet-browsing-tabby-keeps-you-company-j77)
+- [To test or not to test, "How" is the question!](https://dev.to/prazian/to-test-or-not-to-test-how-is-the-question-1l2e)
+- [Cloud vendor lock-in! How much should I be scared of?](https://dev.to/prazian/cloud-vendor-lock-in-how-much-should-i-be-scared-of-19h0)
+- [Have ADHD? Try Why Am I Here](https://dev.to/prazian/have-adhd-try-why-am-i-here-94j)
+- [Forget what you read? Breadcrumb helps](https://dev.to/prazian/forget-what-you-read-breadcrumb-helps-48m1)
+- [Clean up years of GitHub Actions runs automatically](https://dev.to/prazian/clean-up-years-of-github-actions-runs-automatically-33pe)
+- [From "spaghetti code" to "spaghetti architecture"](https://dev.to/prazian/from-spaghetti-code-to-spaghetti-architecture-3b7o)
+- [Effective Metrics and Alerts](https://dev.to/prazian/effective-metrics-and-alerts-2070)
+- [CI/CD pipeline Best practices](https://dev.to/prazian/cicd-pipeline-best-practices-7ac)
+- [CAP theorem: Pick two](https://dev.to/prazian/cap-theorem-pick-two-202a)
 
-You can read more articles [here](https://www.pooyan.info/articles).
+You can find the full list on [dev.to/prazian](https://dev.to/prazian).
+
+More technical deep-dives:
+- [The license risk hiding in your dependency tree](https://pooyan.info/articles/open-license-auditor-github-action)
+- [Make dependency updates boring again](https://pooyan.info/articles/update-dependencies-github-action)
+- [Clean up years of GitHub Actions runs automatically](https://pooyan.info/articles/prune-old-github-actions-runs)
+
+More on Scrum and management:
+- [Scrum is a nice term to hide bad management](https://www.pooyan.info/articles/scrum-is-a-nice-term-to-hide-bad-management)
+- [You don't need that many meetings](https://www.pooyan.info/articles/change-my-mind-meetings)
+- [The Reality of Story Points](https://www.pooyan.info/articles/change-my-mind-story-point)
+- [CI/CD2 & Continuous Debment: How to deal with technical debt](https://www.pooyan.info/articles/ci-cd2-how-to-deal-with-technical-debt)
+- [Should I plan or straightly jump into coding?](https://www.pooyan.info/articles/should-i-plan-or-straightly-jump-into-coding)
+- [Let's build the Burj Khalifa feature on a summerhouse](https://www.pooyan.info/articles/lets-build-the-burj-khalifa-feature-on-a-summerhouse)
+
+More articles [here](https://www.pooyan.info/articles).
 
 ## Who am I?
 - [Personal Website](https://pooyan.info)
 - [LinkedIn](https://www.linkedin.com/in/prazian/)
-- [Medium](https://medium.com/@pooyan_razian)
+- [dev.to](https://dev.to/prazian)
 
 ## The secret truth!
 This section is for those who really want to know the truth 👇
