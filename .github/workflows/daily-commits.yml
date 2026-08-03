@@ -22,8 +22,8 @@ jobs:
     env:
       # Defaults used for the scheduled run; override by triggering this workflow
       # manually ("Run workflow") with custom min_commits / max_commits inputs.
-      MIN_COMMITS: ${{ github.event.inputs.min_commits || '5' }}
-      MAX_COMMITS: ${{ github.event.inputs.max_commits || '45' }}
+      MIN_COMMITS: ${{ github.event.inputs.min_commits || '20' }}
+      MAX_COMMITS: ${{ github.event.inputs.max_commits || '100' }}
 
     steps:
       - name: Checkout repository
