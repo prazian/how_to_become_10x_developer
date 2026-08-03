@@ -3,12 +3,27 @@ name: Daily 10x Commits
 on:
   schedule:
     - cron: "0 2 * * *"  # Runs at 2 AM UTC every day
+  workflow_dispatch:
+    inputs:
+      min_commits:
+        description: "Minimum number of fake commits to generate"
+        required: false
+        default: "5"
+      max_commits:
+        description: "Maximum number of fake commits to generate"
+        required: false
+        default: "45"
 
 jobs:
   generate_commits:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      # Defaults used for the scheduled run; override by triggering this workflow
+      # manually ("Run workflow") with custom min_commits / max_commits inputs.
+      MIN_COMMITS: ${{ github.event.inputs.min_commits || '5' }}
+      MAX_COMMITS: ${{ github.event.inputs.max_commits || '45' }}
 
     steps:
       - name: Checkout repository
@@ -27,7 +42,7 @@ jobs:
       - name: Generate commits
         run: |
           YESTERDAY=$(date -d "yesterday" +"%Y-%m-%d")
-          python src/generate_commits_daily.py $YESTERDAY
+          python src/generate_commits.py daily --date "$YESTERDAY" --min-commits "$MIN_COMMITS" --max-commits "$MAX_COMMITS"
 
       - name: Push changes
         run: |
